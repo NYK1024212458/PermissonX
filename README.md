@@ -632,3 +632,29 @@ signing.secretKeyRingFile=/Users/niuyukun/secring.gpg  #生成的gpg的位置
 点击可以查看具体的信息:
 
 ![image-20230522184329012](https://kunblogpicture.oss-cn-chengdu.aliyuncs.com/blogimg/image-20230522184329012.png)
+
+
+## 上传到mavencentral后进行测试
+
+### 进行依赖:
+
+```kotlin
+implementation("io.github.NYK1024212458:library:1.0")
+```
+
+![image-20230522230919144](https://kunblogpicture.oss-cn-chengdu.aliyuncs.com/blogimg/image-20230522230919144.png)
+
+### 同步活使用进行获取
+
+```kotlin
+binding.btnGet.setOnClickListener {
+    PermissionX.request(this,Manifest.permission.CALL_PHONE){ allgeted,definelist->
+        if (allgeted){
+            Toast.makeText(this,"获取到了",Toast.LENGTH_SHORT).show()
+        }else
+        Toast.makeText(this,"没有获取到",Toast.LENGTH_SHORT).show()
+    }
+}
+```
+
+测试完毕,没有啥问题
