@@ -344,3 +344,5 @@ signing.secretKeyRingFile=/Users/niuyukun/secring.gpg  #生成的gpg的位置
 点击可以查看具体的信息:
 
 ![image-20230522184329012](https://kunblogpicture.oss-cn-chengdu.aliyuncs.com/blogimg/image-20230522184329012.png)
+
+主要参考的博文: https://mp.weixin.qq.com/s/wxFxIKcugIMhGxBAdlIbsg
